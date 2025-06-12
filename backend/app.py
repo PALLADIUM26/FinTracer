@@ -9,6 +9,7 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from models import User
 from flask_bcrypt import Bcrypt
 from routes.auth import auth_bp
+from routes.export import export_bp
 
 
 load_dotenv()
@@ -29,6 +30,7 @@ init_db(app)
 
 app.register_blueprint(transactions_bp)
 app.register_blueprint(auth_bp, url_prefix='/auth')
+app.register_blueprint(export_bp)
 
 
 # Test route
