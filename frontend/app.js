@@ -325,3 +325,36 @@ window.onload = function () {
       });
   };
   
+function downloadCSV() {
+    const token = localStorage.getItem('token');
+    fetch('http://localhost:5000/export/csv', {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    })
+    .then(response => response.blob())
+    .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'transactions.csv';
+        a.click();
+    });
+}
+
+function downloadPDF() {
+    const token = localStorage.getItem('token');
+    fetch('http://localhost:5000/export/pdf', {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    })
+    .then(response => response.blob())
+    .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'transactions.pdf';
+        a.click();
+    });
+}
