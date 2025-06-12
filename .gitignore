@@ -1,3 +1,4 @@
 .env
 /backend/__pycache__/
+/backend/fonts/
 /backend/routes/__pycache__/
