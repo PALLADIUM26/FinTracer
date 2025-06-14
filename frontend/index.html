@@ -96,10 +96,21 @@
     <button onclick="downloadPDF()">Download PDF</button>
   </div>
 
-  <div>
-  <canvas id="typeChart" height="500"></canvas>
-  <canvas id="categoryChart" height="500"></canvas>
+  <div id="chart-container">
+    <canvas id="typeChart" height="500"></canvas>
+    <canvas id="categoryChart" height="500"></canvas>
   </div>
+
+  <!-- <div id="chart-container">
+    <div class="chart-box">
+      <h3>Income vs Expense</h3>
+      <canvas id="typeChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>Expense by Category</h3>
+      <canvas id="categoryChart"></canvas>
+    </div>
+  </div> -->
 
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

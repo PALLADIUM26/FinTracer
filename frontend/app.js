@@ -253,16 +253,26 @@ function renderChart_IncExp(income, expense) {
     data: {
       labels: ['Income', 'Expense'],
       datasets: [{
-        label: 'Spending by Category',
         data: [income, expense],
         backgroundColor: ['#4caf50', '#f44336']
       }]
     },
     options: {
         responsive: false,
-        plugins: { legend: { position: 'bottom' }}
+        plugins: { legend: { position: 'bottom' },
+          title: {
+            display: true,
+            text: 'Income vs Expense',
+            font: {
+              size: 18
+            },
+            padding: {
+              top: 10,
+              bottom: 30
+            }
+        }},
+        maintainAspectRatio: false
         // responsive: true,
-    //     maintainAspectRatio: false,
     },
   });
 }
@@ -285,16 +295,27 @@ function renderChart_ExpCat(expenseCategories) {
     data: {
       labels: labels,
       datasets: [{
-        // label: 'Spending by Category',
         data: data,
         backgroundColor: colors
       }]
     },
     options: {
         responsive: false,
-        plugins: { legend: { position: 'bottom' } }
+        plugins: { legend: { position: 'bottom' },
+          title: {
+            display: true,
+            text: 'Spending by Category',
+            font: {
+              size: 18
+            },
+            padding: {
+              top: 10,
+              bottom: 30
+            }
+        } },
+        maintainAspectRatio: false
         // responsive: true,
-    //     maintainAspectRatio: false,
+    //     
     },
   });
 }
