@@ -4,3 +4,4 @@ Flask-SQLAlchemy
 Flask-JWT-Extended
 PyMySQL
 python-dotenv
+fpdf
