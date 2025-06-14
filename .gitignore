@@ -2,3 +2,5 @@
 /backend/__pycache__/
 /backend/fonts/
 /backend/routes/__pycache__/
+/backend/models2.py
+/backend/models/__pycache__
