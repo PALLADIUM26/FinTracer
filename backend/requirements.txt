@@ -5,3 +5,4 @@ Flask-JWT-Extended
 PyMySQL
 python-dotenv
 fpdf
+cryptography
