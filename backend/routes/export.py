@@ -2,7 +2,7 @@ from flask import Blueprint, Response, send_file
 from io import StringIO, BytesIO
 import csv
 from fpdf import FPDF
-from models import Transaction
+from models.transaction import Transaction
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from db import db
 import os

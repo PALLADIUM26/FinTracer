@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from datetime import datetime
 from db import db
-from models import Transaction
+from models.transaction import Transaction
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
 transactions_bp = Blueprint('transactions', __name__)
