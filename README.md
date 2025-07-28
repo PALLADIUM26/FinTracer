@@ -41,6 +41,9 @@ FinTracer/
 │   │   └── export.py
 |   ├── requirements.txt   # Python dependencies
 │   └── .env               # Environment variables
+│
+├── .gitignore             # gitignore file
+│
 └── README.md              # You're here!
 ```
 <!--│   ├── fonts/             # Font for PDF generation-->
@@ -137,7 +140,7 @@ FinTracer/
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots/Demo
 
 <img src="/1.png" alt="authentication"><br>
 <img src="/2.png" alt="page"><br>
