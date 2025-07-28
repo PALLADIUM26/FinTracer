@@ -139,11 +139,10 @@ FinTracer/
 
 ## 📸 Screenshots
 
-<!--*Add screenshots here of your app UI, charts, login page, etc.*-->
-<img alt="page"><br>
-<img alt="charts"><br>
-<img alt="downloads"><br>
-
+<img src="/1.png" alt="authentication"><br>
+<img src="/2.png" alt="page"><br>
+<img src="/3.png" alt="downloads"><br>
+<img src="/4.png" alt="charts"><br>
 
 ---
 
